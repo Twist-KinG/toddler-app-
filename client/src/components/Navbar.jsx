@@ -4,10 +4,12 @@ import React from 'react';
 const Navbar = ({ onLoginClick, user, onLogout }) => {
     return (
         <nav className="bg-white shadow-md px-6 py-4 flex justify-between items-center">
-            <div className="font-bold text-xl">Logo</div>
+            <div className="font-bold text-xl">
+                <a href="/">Toddler</a>
+            </div>
 
             {/* navbar components */}
-            <div>
+            <div classname="">
                 <a href="/">Home</a>
                 <a href="/">Home</a>
                 <a href="/">Home</a>
