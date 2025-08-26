@@ -4,7 +4,7 @@ import Home from "./pages/Home"; // Import your Home component
 import LearnAlphabets from "./pages/learningalphabet"; // Import the target component for Learn Alphabets
 import PictureMatching from "./pages/picmatching"; // Import the target component for Picture Matching
 import Sounds from "./pages/Sounds"; // Import the target component for Sounds
-import Quiz from "./pages/quiz"; // Import the target component for Quiz
+import Quiz from "./pages/story"; // Import the target component for Quiz
 import Settings from "./pages/settings";// Import the target compponent for Settings
 
 const App = () => {

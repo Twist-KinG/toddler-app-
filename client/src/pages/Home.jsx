@@ -95,7 +95,7 @@ const Home = () => {
               >
                 <MdQuiz className="text-white text-lg" />
               </div>
-              <span>All-in-1 Quiz</span>
+              <span>Story</span>
             </div>
             <MdChevronRight className="text-white text-lg" />
           </button>
