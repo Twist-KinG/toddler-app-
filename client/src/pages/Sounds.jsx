@@ -41,7 +41,7 @@ const sounds = () => {
               >
                 <FaSortAlphaDown className="text-white text-lg" />
               </div>
-              <span>Learn Alphabets</span>
+              <span>Animals</span>
             </div>
             <MdChevronRight className="text-white text-lg" />
           </button>
