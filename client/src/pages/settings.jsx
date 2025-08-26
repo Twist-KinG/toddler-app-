@@ -1,64 +1,73 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import { FaMusic, FaMobileAlt, FaAdjust, FaSave, FaSyncAlt } from "react-icons/fa"; // Importing React Icons
+import { MdChevronLeft } from "react-icons/md"; // Importing Chevron Left Icon
+import logo from "../assets/img/Toodler.png";
 
 const Settings = () => {
-  return (
-    <div className="bg-white min-h-screen flex justify-center items-start pt-16">
-      <div className="w-[320px] h-[640px] border-8 border-black rounded-[48px] relative flex flex-col items-center bg-white">
-        <img
-          alt="Toddler for Learning logo with colorful text and small stars"
-          className="mt-6"
-          height="48"
-          src="https://storage.googleapis.com/a1aa/image/df6de13d-3f5b-4532-88a2-544090422f2e.jpg"
-          width="48"
-        />
-        <h1 className="mt-2 text-black text-[28px]">Settings</h1>
-        <div className="mt-6 bg-blue-300 bg-opacity-50 rounded-xl w-[280px] p-6 flex flex-col gap-6">
-          <label className="flex justify-between items-center text-blue-700 text-[20px]" htmlFor="music">
-            <span>
-              <FaMusic className="mr-2" />
-              Music
-            </span>
-            <input
-              className="toggle-checkbox w-12 h-6 rounded-full bg-blue-700 relative appearance-none cursor-pointer"
-              id="music"
-              type="checkbox"
-            />
-          </label>
-          <label className="flex justify-between items-center text-blue-700 text-[20px]" htmlFor="vibration">
-            <span>
-              <FaMobileAlt className="mr-2" />
-              Vibration
-            </span>
-            <input
-              className="toggle-checkbox w-12 h-6 rounded-full bg-blue-700 relative appearance-none cursor-pointer"
-              id="vibration"
-              type="checkbox"
-            />
-          </label>
-          <label className="flex justify-between items-center text-blue-700 text-[20px]" htmlFor="darkmode">
-            <span>
-              <FaAdjust className="mr-2" />
-              Dark Mode
-            </span>
-            <input
-              className="toggle-checkbox w-12 h-6 rounded-full bg-blue-700 relative appearance-none cursor-pointer"
-              id="darkmode"
-              type="checkbox"
-            />
-          </label>
-          <button className="mt-4 bg-blue-400 bg-opacity-50 text-white text-[16px] rounded-md py-2 px-4 flex justify-center items-center gap-2 cursor-not-allowed select-none" disabled>
-            Save Progress
-            <FaSave />
-          </button>
-          <button className="mt-2 bg-blue-400 bg-opacity-50 text-white text-[16px] rounded-md py-2 px-4 flex justify-center items-center gap-2 cursor-not-allowed select-none" disabled>
-            Reset Progress
-            <FaSyncAlt />
-          </button>
-        </div>
-      </div>
-      <style>
-        {`
+    return (
+        <div className="bg-white min-h-screen flex justify-center items-start pt-16 relative">
+            {/* Return to Home Button */}
+            <Link to="/">
+                <button className="absolute top-4 left-4 p-2 bg-blue-300 rounded-full hover:bg-blue-400 transition">
+                    <MdChevronLeft className="text-white text-2xl" />
+                </button>
+            </Link>
+            <div className="flex flex-col items-center w-[350px]">
+                <img
+                    src={logo}
+                    alt="Toddler for Learning logo with colorful text and small stars"
+                    className="w-30 h-30 mb-1"
+                    height="60"
+                    width="60"
+                />
+                <h1 className="text-black text-5xl mt-2 mb-15">Settings</h1>
+                <div className="bg-blue-300 bg-opacity-50 rounded-xl w-full p-6 flex flex-col gap-6">
+                    <label className="flex justify-between items-center text-white text-[30px] w-full" htmlFor="music">
+                        <span className="flex items-center">
+                            <FaMusic className="mr-2" />
+                            Music
+                        </span>
+                        <input
+                            className="toggle-checkbox w-12 h-6 rounded-full bg-blue-700 relative appearance-none cursor-pointer"
+                            id="music"
+                            type="checkbox"
+                        />
+                    </label>
+                    <label className="flex justify-between items-center text-white text-[30px] w-full" htmlFor="vibration">
+                        <span className="flex items-center">
+                            <FaMobileAlt className="mr-2" />
+                            Vibration
+                        </span>
+                        <input
+                            className="toggle-checkbox w-12 h-6 rounded-full bg-blue-700 relative appearance-none cursor-pointer"
+                            id="vibration"
+                            type="checkbox"
+                        />
+                    </label>
+                    <label className="flex justify-between items-center text-white text-[30px] w-full" htmlFor="darkmode">
+                        <span className="flex items-center">
+                            <FaAdjust className="mr-2" />
+                            Dark Mode
+                        </span>
+                        <input
+                            className="toggle-checkbox w-12 h-6 rounded-full bg-blue-700 relative appearance-none cursor-pointer"
+                            id="darkmode"
+                            type="checkbox"
+                        />
+                    </label>
+                    <button className="mt-4 bg-blue-400 bg-opacity-50 text-white text-[20px] rounded-md py-2 px-4 flex justify-center items-center gap-2 cursor-not-allowed select-none w-full" disabled>
+                        Save Progress
+                        <FaSave />
+                    </button>
+                    <button className="mt-2 bg-blue-400 bg-opacity-50 text-white text-[20px] rounded-md py-2 px-4 flex justify-center items-center gap-2 cursor-not-allowed select-none w-full" disabled>
+                        Reset Progress
+                        <FaSyncAlt />
+                    </button>
+                </div>
+            </div>
+            <style>
+                {`
           /* Custom toggle styling to replicate the toggle switch */
           input[type='checkbox'].toggle-checkbox {
             background-color: #5a6ea0;
@@ -88,9 +97,9 @@ const Settings = () => {
             background: #d1d9f0;
           }
         `}
-      </style>
-    </div>
-  );
+            </style>
+        </div>
+    );
 };
 
 export default Settings;
