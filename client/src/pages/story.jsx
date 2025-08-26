@@ -35,7 +35,7 @@ const Story = () => {
         {stories.map((story) => (
           <div
             key={story.id}
-            className="bg-blue-400 rounded-xl p-3 flex flex-col"
+            className="bg-purple-600 rounded-xl p-3 flex flex-col"
             style={{ width: '180px', height: '300px' }}
           >
             <img
