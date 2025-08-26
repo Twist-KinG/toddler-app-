@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
-import { FaSortAlphaDown, FaClone, FaPaw, FaCar, FaStar, FaRegStar, FaSmile, FaCog } from "react-icons/fa"; // Importing icons from react-icons
-import { MdChevronRight } from "react-icons/md"; // Importing the chevron icon
+import { FaSortAlphaDown, FaClone, FaStar, FaRegStar, FaSmile, FaCog } from "react-icons/fa"; // Importing icons from react-icons
+import { FaVolumeHigh } from "react-icons/fa6";
+import { MdChevronRight, MdQuiz } from "react-icons/md"; // Importing the chevron icon
 import logo from "../assets/img/Toodler.png"; // Importing the local logo image
 
 const Home = () => {
@@ -64,7 +65,7 @@ const Home = () => {
           </button>
         </Link>
         {/* Animal Sounds */}
-        <Link to="/animalsounds">
+        <Link to="/sounds">
           <button
             type="button"
             className="flex items-center justify-between bg-orange-600 rounded-lg py-4 px-5 w-full text-white text-lg mt-5 hover:bg-orange-500"
@@ -74,15 +75,15 @@ const Home = () => {
                 className="bg-orange-500 p-3 rounded-md flex items-center justify-center"
                 style={{ width: 36, height: 36 }}
               >
-                <FaPaw className="text-white text-lg" />
+                <FaVolumeHigh className="text-white text-lg" />
               </div>
-              <span>Animal Sounds</span>
+              <span>Sounds</span>
             </div>
             <MdChevronRight className="text-white text-lg" />
           </button>
         </Link>
-        {/* Vehicle Sounds */}
-        <Link to="/vehiclesounds">
+        {/* Quiz */}
+        <Link to="/Quiz">
           <button
             type="button"
             className="flex items-center justify-between bg-green-600 rounded-lg py-4 px-5 w-full text-white text-lg mt-5 hover:bg-green-500"
@@ -92,9 +93,9 @@ const Home = () => {
                 className="bg-green-500 p-3 rounded-md flex items-center justify-center"
                 style={{ width: 36, height: 36 }}
               >
-                <FaCar className="text-white text-lg" />
+                <MdQuiz className="text-white text-lg" />
               </div>
-              <span>Vehicle Sounds</span>
+              <span>All-in-1 Quiz</span>
             </div>
             <MdChevronRight className="text-white text-lg" />
           </button>

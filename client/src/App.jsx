@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from "./pages/Home"; // Import your Home component
 import LearnAlphabets from "./pages/learningalphabet"; // Import the target component for Learn Alphabets
 import PictureMatching from "./pages/picmatching"; // Import the target component for Picture Matching
-import AnimalSounds from "./pages/animalsound"; // Import the target component for Animal Sounds
-import VehicleSounds from "./pages/vehiclesound"; // Import the target component for Vehicle Sounds
+import Sounds from "./pages/Sounds"; // Import the target component for Sounds
+import Quiz from "./pages/quiz"; // Import the target component for Quiz
 import Settings from "./pages/settings";// Import the target compponent for Settings
 
 const App = () => {
@@ -14,8 +14,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/LearnAlphabets" element={<LearnAlphabets />} />
         <Route path="/PictureMatching" element={<PictureMatching />} />
-        <Route path="/AnimalSounds" element={<AnimalSounds />} />
-        <Route path="/VehicleSounds" element={<VehicleSounds />} />
+        <Route path="/Sounds" element={<Sounds />} />
+        <Route path="/Quiz" element={<Quiz />} />
         <Route path="/Settings" element={<Settings />} />
       </Routes>
     </Router>

@@ -5,7 +5,7 @@ import { FaVolumeHigh } from "react-icons/fa6";
 import { MdChevronRight, MdQuiz, MdChevronLeft } from "react-icons/md"; // Importing the chevron icon
 import logo from "../assets/img/Toodler.png"; // Importing the local logo image
 
-const learningalphabet = () => {
+const sounds = () => {
   return (
     <div className="bg-white min-h-screen flex flex-col items-center px-6 pt-6 pb-10 font-indie relative">
       {/* Settings Button */}
@@ -25,7 +25,7 @@ const learningalphabet = () => {
       />
       {/* Title */}
       <h1 className="text-purple-600 text-5xl leading-tight mb-0">Learn</h1>
-      <p className="text-purple-600 text-3xl mb-6">Alphabets</p>
+      <p className="text-purple-600 text-3xl mb-6">By Sounds</p>
       {/* Buttons container */}
       <div className="w-full max-w-md space-y-4 mt-15 mb-8">
         {/* Learn Alphabets */}
@@ -129,4 +129,4 @@ const learningalphabet = () => {
   );
 }
 
-export default learningalphabet;
+export default sounds;
