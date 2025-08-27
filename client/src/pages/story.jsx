@@ -13,7 +13,7 @@ const stories = [
 
 const Story = () => {
   return (
-    <div className="bg-white min-h-screen flex flex-col items-center pt-8 px-6">
+    <div className="bg-white min-h-md max-w-md flex flex-col items-center pt-8 px-6 font-indie font-indie border rounded-xl">
       <Link to="/">
         <button className="absolute top-4 left-4 p-2 bg-purple-600 rounded-full hover:bg-purple-500 transition">
           <MdChevronLeft className="text-white text-2xl" />
