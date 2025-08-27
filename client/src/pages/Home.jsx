@@ -7,7 +7,7 @@ import logo from "../assets/img/Toodler.png"; // Importing the local logo image
 
 const Home = () => {
   return (
-    <div className="bg-white min-h-md max-w-md flex flex-col items-center px-6 pt-6 pb-10 font-indie relative font-indie border rounded-xl">
+    <div className="bg-white min-h-screen max-w-md flex flex-col items-center px-6 pt-6 pb-10 font-indie relative">
       {/* Settings Button */}
      <Link to="/settings">
       <button className="absolute top-4 right-4 p-2 bg-purple-600 rounded-full text-white hover:bg-purple-500 transition">

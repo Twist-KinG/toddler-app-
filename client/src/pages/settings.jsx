@@ -6,7 +6,7 @@ import logo from "../assets/img/Toodler.png";
 
 const Settings = () => {
     return (
-        <div className="bg-white min-h-screen max-w-md flex justify-center items-start pt-16 relative font-indie border rounded-xl">
+        <div className="bg-white min-h-screen max-w-md flex justify-center items-start pt-16 relative ">
             {/* Return to Home Button */}
             <Link to="/">
                 <button className="absolute top-4 left-4 p-2 bg-blue-300 rounded-full hover:bg-blue-400 transition">
