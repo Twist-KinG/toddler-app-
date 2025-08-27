@@ -1,35 +1,37 @@
+// Sounds.jsx
 import React from "react";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
-import { FaSortAlphaDown, FaClone, FaStar, FaRegStar, FaSmile } from "react-icons/fa"; // Importing icons from react-icons
+import { Link } from "react-router-dom"; // Import Link
+import { FaSortAlphaDown, FaClone, FaStar, FaRegStar, FaSmile } from "react-icons/fa";
 import { FaVolumeHigh } from "react-icons/fa6";
-import { MdChevronRight, MdQuiz, MdChevronLeft } from "react-icons/md"; // Importing the chevron icon
-import logo from "../assets/img/Toodler.png"; // Importing the local logo image
+import { MdChevronRight, MdQuiz, MdChevronLeft } from "react-icons/md";
+import logo from "../assets/img/Toodler.png";
 
-const sounds = () => {
+const Sounds = () => {
   return (
     <div className="bg-white min-h-screen max-w-md flex flex-col items-center px-6 pt-6 pb-10 font-indie relative font-indie">
-      {/* Settings Button */}
-     <Link to="/">
-      <button className="absolute top-4 left-4 p-2 bg-purple-600 rounded-full hover:bg-purple-500 transition">
-        <MdChevronLeft className="text-white text-2xl" />
-      </button>
-     </Link>
+      {/* Back Button */}
+      <Link to="/">
+        <button className="absolute top-4 left-4 p-2 bg-purple-600 rounded-full hover:bg-purple-500 transition">
+          <MdChevronLeft className="text-white text-2xl" />
+        </button>
+      </Link>
 
       {/* Logo */}
       <img
-        src={logo} // Using the imported logo image
+        src={logo}
         alt="Toddler Fun Learning logo with two kids and stars"
         className="w-30 h-30 mb-1"
         width={60}
         height={60}
       />
+
       {/* Title */}
       <h1 className="text-purple-600 text-5xl leading-tight mb-0">Learn</h1>
       <p className="text-purple-600 text-3xl mb-6">By Sounds</p>
-      {/* Buttons container */}
+
+      {/* Buttons */}
       <div className="w-full max-w-md space-y-4 mt-15 mb-8">
-        {/* Learn Alphabets */}
-        <Link to="/learnalphabets">
+        <Link to="animals">
           <button
             type="button"
             className="flex items-center justify-between bg-purple-600 rounded-lg py-4 px-5 w-full text-white text-lg hover:bg-purple-500"
@@ -46,8 +48,8 @@ const sounds = () => {
             <MdChevronRight className="text-white text-lg" />
           </button>
         </Link>
-        {/* Picture Matching */}
-        <Link to="/picturematching">
+
+        <Link to="vehicles">
           <button
             type="button"
             className="flex items-center justify-between bg-red-600 rounded-lg py-4 px-5 w-full text-white text-lg mt-5 hover:bg-red-500"
@@ -55,17 +57,17 @@ const sounds = () => {
             <div className="flex items-center space-x-3">
               <div
                 className="bg-red-500 p-3 rounded-md flex items-center justify-center"
-                style={{ width: 36, height: 36 }} 
+                style={{ width: 36, height: 36 }}
               >
                 <FaClone className="text-white text-lg" />
               </div>
-              <span>Picture Matching</span>
+              <span>Vehicles</span>
             </div>
             <MdChevronRight className="text-white text-lg" />
           </button>
         </Link>
-        {/* Animal Sounds */}
-        <Link to="/sounds">
+
+        <Link to="instruments">
           <button
             type="button"
             className="flex items-center justify-between bg-orange-600 rounded-lg py-4 px-5 w-full text-white text-lg mt-5 hover:bg-orange-500"
@@ -77,13 +79,13 @@ const sounds = () => {
               >
                 <FaVolumeHigh className="text-white text-lg" />
               </div>
-              <span>Sounds</span>
+              <span>Instruments</span>
             </div>
             <MdChevronRight className="text-white text-lg" />
           </button>
         </Link>
-        {/* Quiz */}
-        <Link to="/Quiz">
+
+        <Link to="squiz">
           <button
             type="button"
             className="flex items-center justify-between bg-green-600 rounded-lg py-4 px-5 w-full text-white text-lg mt-5 hover:bg-green-500"
@@ -101,6 +103,7 @@ const sounds = () => {
           </button>
         </Link>
       </div>
+
       {/* Learning Progress */}
       <div className="text-center mt-5 mb-4">
         <p className="text-black text-lg mb-1">Learning Progress</p>
@@ -112,21 +115,20 @@ const sounds = () => {
         </div>
         <p className="text-black text-sm">3 of 4 activities completed</p>
       </div>
+
       {/* Encouragement box */}
       <div className="bg-blue-600 rounded-lg p-4 max-w-md w-full mt-5 text-xs text-white leading-tight">
         <div className="flex items-start space-x-2">
-          <FaSmile className="text-white mt-1" /> {/* Smiling face icon */}
+          <FaSmile className="text-white mt-1" />
           <p>
-            Great learning kiddo!!!!!
-            <br />
-            Keep exploring and having fun.........
-            <br />
+            Great learning kiddo!!!!! <br />
+            Keep exploring and having fun......... <br />
             Keep making more progress,,,,,,,,
           </p>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default sounds;
+export default Sounds;
