@@ -6,10 +6,10 @@ import logo from "../../assets/img/Toodler.png"; // Importing the local logo ima
 import image from "../../assets/img/b.png"; // Importing the local logo image
 import { FaArrowCircleRight } from 'react-icons/fa';
 
-const Squiz = () => {
+const Lquiz = () => {
   return (
    <div className="bg-white min-h-screen max-w-md flex flex-col items-center pt-8 px-6 font-indie relative">
-         <Link to="/sounds">
+         <Link to="/learnalphabets">
            <button className="absolute top-4 left-4 p-2 bg-purple-600 rounded-full hover:bg-purple-500 transition">
              <MdChevronLeft className="text-white text-2xl" />
            </button>
@@ -25,7 +25,7 @@ const Squiz = () => {
          />
          {/* Title */}
          <h1 className="text-purple-600 text-5xl leading-tight mb-0">Quiz</h1>
-         <p className="text-purple-600 text-3xl mb-6">Sounds</p>
+         <p className="text-purple-600 text-3xl mb-6">Letters</p>
       <p className="text-black text-2xl mb-5 self-start ax-w-xs">1. Question here ?</p>
       <img
         alt="Placeholder image 340 by 240 with grey background"
@@ -56,4 +56,4 @@ const Squiz = () => {
   );
 };
 
-export default Squiz;
+export default Lquiz;

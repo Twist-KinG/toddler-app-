@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
-import { FaSortAlphaDown, FaClone, FaStar, FaRegStar, FaSmile } from "react-icons/fa"; // Importing icons from react-icons
-import { FaVolumeHigh } from "react-icons/fa6";
+import { FaClone, FaStar, FaRegStar, FaSmile } from "react-icons/fa"; // Importing icons from react-icons
 import { MdChevronRight, MdQuiz, MdChevronLeft } from "react-icons/md"; // Importing the chevron icon
+import { RxLetterCaseLowercase, RxLetterCaseUppercase } from "react-icons/rx";
 import logo from "../assets/img/Toodler.png"; // Importing the local logo image
 
 const learningalphabet = () => {
@@ -29,7 +29,7 @@ const learningalphabet = () => {
       {/* Buttons container */}
       <div className="w-full max-w-md space-y-4 mt-15 mb-8">
         {/* Learn Alphabets */}
-        <Link to="/learnalphabets">
+        <Link to="capitalletters">
           <button
             type="button"
             className="flex items-center justify-between bg-purple-600 rounded-lg py-4 px-5 w-full text-white text-lg hover:bg-purple-500"
@@ -39,15 +39,15 @@ const learningalphabet = () => {
                 className="bg-purple-500 rounded-md flex items-center justify-center"
                 style={{ width: 36, height: 36 }}
               >
-                <FaSortAlphaDown className="text-white text-lg" />
+                <RxLetterCaseUppercase className="text-white text-lg" />
               </div>
-              <span>Learn Alphabets</span>
+              <span>Capital Letters</span>
             </div>
             <MdChevronRight className="text-white text-lg" />
           </button>
         </Link>
         {/* Picture Matching */}
-        <Link to="/picturematching">
+        <Link to="smallletters">
           <button
             type="button"
             className="flex items-center justify-between bg-red-600 rounded-lg py-4 px-5 w-full text-white text-lg mt-5 hover:bg-red-500"
@@ -57,15 +57,15 @@ const learningalphabet = () => {
                 className="bg-red-500 p-3 rounded-md flex items-center justify-center"
                 style={{ width: 36, height: 36 }} 
               >
-                <FaClone className="text-white text-lg" />
+                <RxLetterCaseLowercase className="text-white text-lg" />
               </div>
-              <span>Picture Matching</span>
+              <span>Small Letters</span>
             </div>
             <MdChevronRight className="text-white text-lg" />
           </button>
         </Link>
         {/* Animal Sounds */}
-        <Link to="/sounds">
+        <Link to="lettermatch">
           <button
             type="button"
             className="flex items-center justify-between bg-orange-600 rounded-lg py-4 px-5 w-full text-white text-lg mt-5 hover:bg-orange-500"
@@ -75,15 +75,15 @@ const learningalphabet = () => {
                 className="bg-orange-500 p-3 rounded-md flex items-center justify-center"
                 style={{ width: 36, height: 36 }}
               >
-                <FaVolumeHigh className="text-white text-lg" />
+                <FaClone className="text-white text-lg" />
               </div>
-              <span>Sounds</span>
+              <span>Letter Match</span>
             </div>
             <MdChevronRight className="text-white text-lg" />
           </button>
         </Link>
         {/* Quiz */}
-        <Link to="/Quiz">
+        <Link to="lquiz">
           <button
             type="button"
             className="flex items-center justify-between bg-green-600 rounded-lg py-4 px-5 w-full text-white text-lg mt-5 hover:bg-green-500"

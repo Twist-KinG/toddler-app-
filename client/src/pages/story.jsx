@@ -37,7 +37,7 @@ const Story = () => {
         {stories.map((story) => (
           <div
             key={story.id}
-            className="bg-purple-600 rounded-xl p-3 flex flex-col"
+            className="bg-purple-600 rounded-xl p-3 flex flex-col mb-5"
             style={{ width: '180px', height: '300px' }}
           >
             <img
@@ -47,8 +47,8 @@ const Story = () => {
               src={story.imgSrc}
               width="180"
             />
-            <p className="text-white text-sm">{story.title}</p>
-            <p className="text-white text-xs">{story.author}</p>
+            <p className="text-white text-xl">{story.title}</p>
+            <p className="text-white text-s">{story.author}</p>
           </div>
         ))}
       </div>

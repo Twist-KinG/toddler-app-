@@ -83,7 +83,7 @@ const Home = () => {
           </button>
         </Link>
         {/* Quiz */}
-        <Link to="/Quiz">
+        <Link to="/Story">
           <button
             type="button"
             className="flex items-center justify-between bg-green-600 rounded-lg py-4 px-5 w-full text-white text-lg mt-5 hover:bg-green-500"
