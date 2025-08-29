@@ -47,7 +47,7 @@ const Home = () => {
           </button>
         </Link>
         {/* Picture Matching */}
-        <Link to="/picturematching">
+        <Link to="/picturelearning">
           <button
             type="button"
             className="flex items-center justify-between bg-red-600 rounded-lg py-4 px-5 w-full text-white text-lg mt-5 hover:bg-red-500"
@@ -59,7 +59,7 @@ const Home = () => {
               >
                 <FaClone className="text-white text-lg" />
               </div>
-              <span>Picture Matching</span>
+              <span>Picture Learning</span>
             </div>
             <MdChevronRight className="text-white text-lg" />
           </button>

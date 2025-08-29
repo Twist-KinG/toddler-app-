@@ -5,7 +5,7 @@ import { FaVolumeHigh } from "react-icons/fa6";
 import { MdChevronRight, MdQuiz, MdChevronLeft } from "react-icons/md"; // Importing the chevron icon
 import logo from "../assets/img/Toodler.png"; // Importing the local logo image
 
-const picmatching = () => {
+const picturelearning = () => {
   return (
     <div className="bg-white min-h-screen max-w-md flex flex-col items-center px-6 pt-6 pb-10 font-indie relative">
       {/* Settings Button */}
@@ -25,11 +25,11 @@ const picmatching = () => {
       />
       {/* Title */}
       <h1 className="text-purple-600 text-5xl leading-tight mb-0">Picture</h1>
-      <p className="text-purple-600 text-3xl mb-6">Matching</p>
+      <p className="text-purple-600 text-3xl mb-6">Learning</p>
       {/* Buttons container */}
       <div className="w-full max-w-md space-y-4 mt-15 mb-8">
         {/* Learn Alphabets */}
-        <Link to="/learnalphabets">
+        <Link to="fruits">
           <button
             type="button"
             className="flex items-center justify-between bg-purple-600 rounded-lg py-4 px-5 w-full text-white text-lg hover:bg-purple-500"
@@ -41,13 +41,13 @@ const picmatching = () => {
               >
                 <FaSortAlphaDown className="text-white text-lg" />
               </div>
-              <span>Learn Alphabets</span>
+              <span>Fruits and Vegetables</span>
             </div>
             <MdChevronRight className="text-white text-lg" />
           </button>
         </Link>
         {/* Picture Matching */}
-        <Link to="/picturematching">
+        <Link to="plants">
           <button
             type="button"
             className="flex items-center justify-between bg-red-600 rounded-lg py-4 px-5 w-full text-white text-lg mt-5 hover:bg-red-500"
@@ -59,13 +59,13 @@ const picmatching = () => {
               >
                 <FaClone className="text-white text-lg" />
               </div>
-              <span>Picture Matching</span>
+              <span>Animals and Plants</span>
             </div>
             <MdChevronRight className="text-white text-lg" />
           </button>
         </Link>
         {/* Animal Sounds */}
-        <Link to="/sounds">
+        <Link to="transportation">
           <button
             type="button"
             className="flex items-center justify-between bg-orange-600 rounded-lg py-4 px-5 w-full text-white text-lg mt-5 hover:bg-orange-500"
@@ -77,13 +77,13 @@ const picmatching = () => {
               >
                 <FaVolumeHigh className="text-white text-lg" />
               </div>
-              <span>Sounds</span>
+              <span>Transportation and Devices</span>
             </div>
             <MdChevronRight className="text-white text-lg" />
           </button>
         </Link>
         {/* Quiz */}
-        <Link to="/Quiz">
+        <Link to="pquiz">
           <button
             type="button"
             className="flex items-center justify-between bg-green-600 rounded-lg py-4 px-5 w-full text-white text-lg mt-5 hover:bg-green-500"
@@ -129,4 +129,4 @@ const picmatching = () => {
   );
 }
 
-export default picmatching;
+export default picturelearning;

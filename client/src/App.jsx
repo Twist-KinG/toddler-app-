@@ -3,8 +3,12 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from "./pages/Home";
 import LearnAlphabets from "./pages/learningalphabet";
-import PictureMatching from "./pages/picmatching";
-import Sounds from "./pages/Sounds";
+import PictureLearning from "./pages/picturelearning";
+import Fruits from "./components/picture/fruits";
+import Plants from "./components/picture/plants";
+import Transportation from "./components/picture/transportation";
+import Pquiz from "./components/picture/pquiz";
+import Sounds from "./pages/sounds";
 import Animals from "./components/sounds/animals";
 import Vehicles from "./components/sounds/vehicles";
 import Instruments from "./components/sounds/instruments";
@@ -26,7 +30,11 @@ const App = () => {
         <Route path="/learnalphabets/smallletters" element={<Small />} />
         <Route path="/learnalphabets/lquiz" element={<Lquiz />} />
         <Route path="/learnalphabets/lettermatch" element={<LetterMatch />} />
-        <Route path="/picturematching" element={<PictureMatching />} />
+        <Route path="/picturelearning" element={<PictureLearning />} />
+        <Route path="/picturelearning/fruits" element={<Fruits />} />
+        <Route path="/picturelearning/plants" element={<Plants />} />
+        <Route path="/picturelearning/transportation" element={<Transportation />} />
+        <Route path="/picturelearning/pquiz" element={<Pquiz />} />
         <Route path="/sounds" element={<Sounds />} />
         <Route path="/sounds/animals" element={<Animals />} />
         <Route path="/sounds/vehicles" element={<Vehicles />} />
