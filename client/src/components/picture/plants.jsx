@@ -55,7 +55,7 @@ const plants = () => {
                 ))}
             </section>
             {/*Vegetable Section */}
-            <span className='text-2xl text-white px-3 py-2 rounded-lg bg-purple-600 mt-5'>Vegetables</span>
+            <span className='text-2xl text-white px-3 py-2 rounded-lg bg-purple-600 mt-5'>Plants</span>
             <section className="grid grid-cols-2 gap-2 w-full mt-5">
                 {plant.map((plant) => (
                     <div
