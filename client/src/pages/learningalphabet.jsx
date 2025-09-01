@@ -41,7 +41,7 @@ const learningalphabet = () => {
               >
                 <RxLetterCaseUppercase className="text-white text-lg" />
               </div>
-              <span>Capital Letters</span>
+              <span>English Alphabets</span>
             </div>
             <MdChevronRight className="text-white text-lg" />
           </button>
@@ -59,7 +59,7 @@ const learningalphabet = () => {
               >
                 <RxLetterCaseLowercase className="text-white text-lg" />
               </div>
-              <span>Small Letters</span>
+              <span>नेपाली वर्णमाला</span>
             </div>
             <MdChevronRight className="text-white text-lg" />
           </button>
