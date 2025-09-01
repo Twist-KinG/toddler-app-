@@ -7,6 +7,19 @@ import logo from "../../assets/img/Toodler.png"; // Importing the local logo ima
 
 const capitalletter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 const smallletter = "abcdefghijklmnopqrstuvwxyz".split("");
+const vowels = "AEIOU".split("");
+const numbers = [
+  { id: '0', number: '0', name: 'Zero' },
+  { id: '1', number: '1', name: 'One' },
+  { id: '2', number: '2', name: 'Two' },
+  { id: '3', number: '3', name: 'Three' },
+  { id: '4', number: '4', name: 'Four' },
+  { id: '5', number: '5', name: 'Five' },
+  { id: '6', number: '6', name: 'Six' },
+  { id: '7', number: '7', name: 'Seven' },
+  { id: '8', number: '8', name: 'Eight' },
+  { id: '9', number: '9', name: 'Nine' },
+]
 
 const CapitalLetters = () => {
   // Use a ref to store audio elements mapped by letter
@@ -31,7 +44,7 @@ const CapitalLetters = () => {
   // };
 
   return (
-    <div className="bg-white min-h-screen max-w-md flex flex-col items-center pt-8 px-6 font-indie relative">
+    <div className="bg-white mb-5 min-h-screen max-w-md flex flex-col items-center pt-8 px-6 font-indie relative">
       <Link to="/learnalphabets">
         <button className="absolute top-4 left-4 p-2 bg-purple-600 rounded-full hover:bg-purple-500 transition">
           <MdChevronLeft className="text-white text-2xl" />
@@ -48,8 +61,37 @@ const CapitalLetters = () => {
       />
       {/* Title */}
       <h1 className="text-purple-600 text-5xl leading-tight mb-0">English</h1>
-      <p className="text-purple-600 text-3xl mb-6">Alphabets</p>
-      <p>Capital Letters</p>
+      <p className="text-purple-600 text-3xl mb-6">Alphabets & Numbers</p>
+      <span className='text-2xl text-white px-3 py-2 rounded-lg bg-purple-600 mb-5 mt-10'>Numbers</span>
+      <div className="grid grid-cols-5 gap-[10px] w-full">
+          {numbers.map((num) => (
+            <button
+              key={num.id}
+              aria-label={`Play sound for letter ${num.number}`}
+              className="bg-purple-600 rounded-md text-center text-white w-[74px] h-[74px] font-indie transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500"
+              onClick={() => playSound(num.number)}
+              type="button"
+            >
+              <span className="text-4xl">{num.number}</span><br />
+              <span className="text-xl">{num.name}</span>
+            </button>
+          ))}
+      </div>
+      <span className='text-2xl text-white px-3 py-2 rounded-lg bg-purple-600 mb-5 mt-10'>Vowels</span>
+      <div className="grid grid-cols-5 justify-center gap-[10px] w-full">
+        {vowels.map((letter) => (
+          <button
+            key={letter}
+            aria-label={`Play sound for letter ${letter}`}
+            className="bg-purple-600 rounded-md py-4 text-4xl text-white w-[74px] h-[74px] font-normal transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500"
+            onClick={() => playSound(letter)}
+            type="button"
+          >
+            {letter}
+          </button>
+        ))}
+      </div>
+      <span className='text-2xl text-white px-3 py-2 rounded-lg bg-purple-600 mb-5 mt-10'>Capital Letters</span>
       <div className="grid grid-cols-5 justify-center gap-[10px] w-full">
         {capitalletter.map((letter) => (
           <button
@@ -63,7 +105,7 @@ const CapitalLetters = () => {
           </button>
         ))}
       </div>
-      <p>Small Letters</p>
+      <span className='text-2xl text-white px-3 py-2 rounded-lg bg-purple-600 mb-5 mt-10'>Small Letters</span>
       <div className="grid grid-cols-5 justify-center gap-[10px] w-full">
         {smallletter.map((letter) => (
           <button

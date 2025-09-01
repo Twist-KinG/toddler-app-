@@ -41,7 +41,7 @@ const Home = () => {
               >
                 <FaSortAlphaDown className="text-white text-lg" />
               </div>
-              <span>Learn Alphabets</span>
+              <span>Learn Alphabets & Numbers</span>
             </div>
             <MdChevronRight className="text-white text-lg" />
           </button>
