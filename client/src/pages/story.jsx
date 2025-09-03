@@ -57,20 +57,6 @@ const Story = () => {
           </div>
         ))}
       </div>
-
-      {/* Encouragement box */}
-      <div className="bg-blue-600 rounded-lg p-4 max-w-md w-full mt-5 text-xs text-white leading-tight animate-fadeInUp delay-700">
-        <div className="flex items-start space-x-2">
-          <FaSmile className="text-white mt-1 animate-spin-slow" />
-          <p>
-            📖 Amazing reading progress! <br />
-            🌟 Keep enjoying stories and discovering new adventures. <br />
-            🚀 Every story you read grows your imagination!
-          </p>
-        </div>
-      </div>
-
-      
     </div>
   );
 };
