@@ -22,10 +22,28 @@ const numbers = [
 ];
 
 // Play sound function
+
 const playSound = (key) => {
+
+  const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+
   const audio = new Audio(`/sounds/EnglishAlphabet/${key.toLowerCase()}.mp3`);
-  audio.play();
+
+
+  const track = audioContext.createMediaElementSource(audio);
+
+
+  const gainNode = audioContext.createGain();
+
+  gainNode.gain.value = 5; //increase 5x volume
+
+  track.connect(gainNode).connect(audioContext.destination);
+
+  audio.play().catch(err => console.log("Error playing sound:", err));
 };
+
+
+
 
 const CapitalLetters = () => {
   return (
