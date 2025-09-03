@@ -119,45 +119,6 @@ const Home = () => {
           </p>
         </div>
       </div>
-
-      {/* Animations in same file */}
-      <style>
-        {`
-          @keyframes fadeIn { 
-            from { opacity: 0; } 
-            to { opacity: 1; } 
-          }
-          @keyframes fadeInUp { 
-            from { opacity: 0; transform: translateY(20px); } 
-            to { opacity: 1; transform: translateY(0); } 
-          }
-          @keyframes bounceSlow { 
-            0%, 100% { transform: translateY(0); } 
-            50% { transform: translateY(-5px); } 
-          }
-          @keyframes spinSlow { 
-            from { transform: rotate(0deg); } 
-            to { transform: rotate(360deg); } 
-          }
-          @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-          }
-
-          .animate-spin-default { animation: spin 2s linear infinite; }
-          .animate-fadeIn { animation: fadeIn 0.5s ease-in-out; }
-          .animate-fadeInUp { animation: fadeInUp 0.5s ease-in-out forwards; }
-          .animate-bounce-slow { animation: bounceSlow 1s infinite; }
-          .animate-spin-slow { animation: spinSlow 1s linear infinite; }
-          .animate-stagger { animation: fadeInUp 0.8s ease-in-out forwards; opacity: 0; }
-          .delay-100 { animation-delay: 0.1s; }
-          .delay-200 { animation-delay: 0.2s; }
-          .delay-300 { animation-delay: 0.3s; }
-          .delay-400 { animation-delay: 0.4s; }
-          .delay-500 { animation-delay: 0.5s; }
-          .delay-700 { animation-delay: 0.7s; }
-        `}
-      </style>
     </div>
   );
 };

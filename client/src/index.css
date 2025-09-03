@@ -1,2 +1,48 @@
+/* Import the tailwind */
 @import "tailwindcss";
 
+/* Fade In */
+@keyframes fadeIn { 
+  from { opacity: 0; } 
+  to { opacity: 1; } 
+}
+.animate-fadeIn { animation: fadeIn 0.5s ease-in-out; }
+
+/* Fade In Up */
+@keyframes fadeInUp { 
+  from { opacity: 0; transform: translateY(20px); } 
+  to { opacity: 1; transform: translateY(0); } 
+}
+.animate-fadeInUp { animation: fadeInUp 0.5s ease-in-out forwards; }
+
+/* Bounce Slowly */
+@keyframes bounceSlow { 
+  0%, 100% { transform: translateY(0); } 
+  50% { transform: translateY(-5px); } 
+}
+.animate-bounce-slow { animation: bounceSlow 1s infinite; }
+
+/* Spin Slowly */
+@keyframes spinSlow { 
+  from { transform: rotate(0deg); } 
+  to { transform: rotate(360deg); } 
+}
+.animate-spin-slow { animation: spinSlow 1s linear infinite; }
+
+/* Spin Default */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.animate-spin-default { animation: spin 2s linear infinite; }
+
+/* Staggered FadeInUp */
+.animate-stagger { animation: fadeInUp 0.8s ease-in-out forwards; opacity: 0; }
+
+/* Animation delays */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-700 { animation-delay: 0.7s; }
