@@ -112,19 +112,19 @@ const picturelearning = () => {
         </div>
         <p className="text-black text-sm">3 of 4 activities completed</p>
       </div>
+      
       {/* Encouragement box */}
-      <div className="bg-blue-600 rounded-lg p-4 max-w-md w-full mt-5 text-xs text-white leading-tight">
+      <div className="bg-blue-600 rounded-lg p-4 max-w-md w-full mt-5 text-xs text-white leading-tight animate-fadeInUp delay-700">
         <div className="flex items-start space-x-2">
-          <FaSmile className="text-white mt-1" /> {/* Smiling face icon */}
+          <FaSmile className="text-white mt-1 animate-spin-slow" />
           <p>
-            Great learning kiddo!!!!!
-            <br />
-            Keep exploring and having fun.........
-            <br />
-            Keep making more progress,,,,,,,,
+            🖼️ Fantastic matching skills! <br />
+            🌟 Keep learning by connecting pictures with words and sounds. <br />
+            🚀 You’re sharpening your memory and observation skills!
           </p>
         </div>
       </div>
+
     </div>
   );
 }
