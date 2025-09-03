@@ -111,11 +111,11 @@ const Home = () => {
       {/* Encouragement box */}
       <div className="bg-blue-600 rounded-lg p-4 max-w-md w-full mt-5 text-xs text-white leading-tight animate-fadeInUp delay-700">
         <div className="flex items-start space-x-2">
-          <FaSmile className="text-white mt-1 animate-spin-slow" />
+          <FaSmile className="text-white mt-1" />
           <p>
-            Great learning kiddo!!!!! <br />
-            Keep exploring and having fun......... <br />
-            Keep making more progress,,,,,,,,
+            🎉 Fantastic job, little learner! <br />
+            🌟 Keep exploring and having fun every day. <br />
+            🚀 Every new thing you learn makes you smarter and stronger!
           </p>
         </div>
       </div>

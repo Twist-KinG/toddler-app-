@@ -108,14 +108,15 @@ const Sounds = () => {
       {/* Encouragement box */}
       <div className="bg-blue-600 rounded-lg p-4 max-w-md w-full mt-5 text-xs text-white leading-tight animate-fadeInUp delay-700">
         <div className="flex items-start space-x-2">
-          <FaSmile className="text-white mt-1 animate-spin-slow" />
+          <FaSmile className="text-white mt-1" />
           <p>
-            Great learning kiddo!!!!! <br />
-            Keep exploring and having fun......... <br />
-            Keep making more progress,,,,,,,,
+            🎵 Great listening skills! <br />
+            🐶 Keep learning the sounds of animals, instruments, and vehicles. <br />
+            🌟 You’re becoming super observant and smart!
           </p>
         </div>
       </div>
+
     </div>
   );
 };
