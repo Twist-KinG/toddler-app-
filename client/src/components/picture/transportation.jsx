@@ -4,14 +4,29 @@ import { MdChevronLeft } from "react-icons/md";
 import logo from "../../assets/img/Toodler.png";
 
 const transportations = [ 
-    {id:"1", title:"Car", imgSrc: logo },
-    {id:"2", title:"Bike", imgSrc: logo },
+    {id:"1", title:"Car", imgSrc: "/src/assets/transportation/car.png" },
+    {id:"2", title:"Bicycle", imgSrc: "/src/assets/transportation/bicycle.png" },
+    {id:"3", title:"Bus", imgSrc: "/src/assets/transportation/bus.png" },
+    {id:"4", title:"Scooter", imgSrc: "/src/assets/transportation/scooter.png" },
+    {id:"5", title:"Ship", imgSrc: "/src/assets/transportation/ship.png" },
+    {id:"6", title:"Truck", imgSrc: "/src/assets/transportation/truck.png" },
+    {id:"7", title:"Rickshaw", imgSrc: "/src/assets/transportation/rickshaw.png" },
+    {id:"8", title:"Motorcycle", imgSrc: "/src/assets/transportation/bike.png" },
+    {id:"9", title:"Train", imgSrc: "/src/assets/transportation/train.png" },
+    {id:"10", title:"Aeroplane", imgSrc: "/src/assets/transportation/aeroplane.png" },
 ];
 
 const devices = [ 
-    {id:"1", title:"Smartphone", imgSrc: logo },
-    {id:"2", title:"Laptop", imgSrc: logo },
-    {id:"3", title:"Smartwatch", imgSrc: logo },
+    {id:"1", title:"Smartphone", imgSrc: "/src/assets/transportation/mobile.png" },
+    {id:"2", title:"Laptop", imgSrc: "/src/assets/transportation/laptop.png" },
+    {id:"3", title:"Smartwatch", imgSrc: "/src/assets/transportation/smartwatch.png" },
+    {id:"3", title:"Television", imgSrc: "/src/assets/transportation/TV.png" },
+    {id:"3", title:"Computer", imgSrc: "/src/assets/transportation/computer.png" },
+    {id:"3", title:"Speaker", imgSrc: "/src/assets/transportation/speaker.png" },
+    {id:"3", title:"Refrigerator", imgSrc: "/src/assets/transportation/refrigerator.png" },
+    {id:"3", title:"Air Cooler", imgSrc: "/src/assets/transportation/aircooler.png"},
+    {id:"3", title:"Fan", imgSrc: "/src/assets/transportation/fan.png"},
+    {id:"3", title:"Oven", imgSrc: "/src/assets/transportation/oven.png" },
 ];
 
 const transportation = () => {
