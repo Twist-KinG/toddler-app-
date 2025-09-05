@@ -74,8 +74,7 @@ const CapitalLetters = () => {
             key={num.id}
             className="bg-purple-600 rounded-md text-center text-white w-[74px] h-[74px] font-indie transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500"
             onClick={() => playSound(num.number)}
-            type="button"
-          >
+            type="button">
             <span className="text-4xl">{num.number}</span><br />
             <span className="text-xl">{num.name}</span>
           </button>
