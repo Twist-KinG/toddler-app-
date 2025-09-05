@@ -68,9 +68,10 @@ const Sounds = () => {
         <Link to="instruments">
           <button
             type="button"
-            className="flex items-center justify-between bg-orange-600 rounded-lg py-4 px-5 w-full text-white text-lg mt-5 animate-stagger delay-300"
-          >
+            className="flex items-center justify-between bg-orange-600 rounded-lg py-4 px-5 w-full text-white text-lg mt-5 animate-stagger delay-300">
+            
             <div className="flex items-center space-x-3">
+
               <div className="bg-orange-500 p-3 rounded-md flex items-center justify-center" style={{ width: 36, height: 36 }}>
                 <FaVolumeHigh className="text-white text-lg" />
               </div>
@@ -80,17 +81,21 @@ const Sounds = () => {
           </button>
         </Link>
 
+        {/* link for quize */}
         <Link to="squiz">
           <button
             type="button"
-            className="flex items-center justify-between bg-green-600 rounded-lg py-4 px-5 w-full text-white text-lg mt-5 animate-stagger delay-400"
-          >
+            className="flex items-center justify-between bg-green-600 rounded-lg py-4 px-5 w-full text-white text-lg mt-5 animate-stagger delay-400">
+            
             <div className="flex items-center space-x-3">
+
               <div className="bg-green-500 p-3 rounded-md flex items-center justify-center" style={{ width: 36, height: 36 }}>
                 <MdQuiz className="text-white text-lg" />
               </div>
+
               <span>Quiz</span>
             </div>
+            
             <MdChevronRight className="text-white text-lg animate-pulse" />
           </button>
         </Link>
