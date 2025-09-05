@@ -89,8 +89,7 @@ const CapitalLetters = () => {
             key={letter}
             className="bg-purple-600 rounded-md py-4 text-4xl text-white w-[74px] h-[74px] font-normal transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500"
             onClick={() => playSound(letter)}
-            type="button"
-          >
+            type="button">
             {letter}
           </button>
         ))}
@@ -104,8 +103,7 @@ const CapitalLetters = () => {
             key={letter}
             className="bg-purple-600 rounded-md py-4 text-4xl text-white w-[74px] h-[74px] font-normal transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500"
             onClick={() => playSound(letter)}
-            type="button"
-          >
+            type="button">
             {letter}
           </button>
         ))}
@@ -119,8 +117,7 @@ const CapitalLetters = () => {
             key={letter}
             className="bg-purple-600 rounded-md py-4 text-4xl text-white w-[74px] h-[74px] font-normal transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500"
             onClick={() => playSound(letter)}
-            type="button"
-          >
+            type="button">
             {letter}
           </button>
         ))}
