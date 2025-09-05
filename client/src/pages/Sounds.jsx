@@ -32,6 +32,7 @@ const Sounds = () => {
 
       {/* Buttons */}
       <div className="w-full max-w-md space-y-4 mt-15 mb-8">
+        {/* animal links */}
         <Link to="animals">
           <button
             type="button"
@@ -47,6 +48,7 @@ const Sounds = () => {
           </button>
         </Link>
 
+{/* vehicle link */}
         <Link to="vehicles">
           <button
             type="button"
