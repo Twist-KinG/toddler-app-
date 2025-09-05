@@ -48,7 +48,7 @@ const Sounds = () => {
           </button>
         </Link>
 
-{/* vehicle link */}
+        {/* vehicle link */}
         <Link to="vehicles">
           <button
             type="button"
@@ -64,6 +64,7 @@ const Sounds = () => {
           </button>
         </Link>
 
+        {/* instrument link */}
         <Link to="instruments">
           <button
             type="button"
