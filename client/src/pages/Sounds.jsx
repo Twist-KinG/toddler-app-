@@ -113,6 +113,7 @@ const Sounds = () => {
         <p className="text-black text-sm">3 of 4 activities completed</p>
       </div>
 
+      
       {/* Encouragement box */}
       <div className="bg-blue-600 rounded-lg p-4 max-w-md w-full mt-5 text-xs text-white leading-tight animate-fadeInUp delay-700">
         <div className="flex items-start space-x-2">
